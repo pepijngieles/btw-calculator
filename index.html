@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name='viewport' content='width=device-width, user-scalable=no'>
+	<title>BTW Calculator</title>
+	<meta name="description" content="This calculator is made to simplify tax calculations. You can enter values both including and excluding VAT.">
+	<meta name="author" content="Pepijn Gieles">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<center class="calculator">
+		<label for="excl">
+			Exclusive
+			<input type="text" id="excl" value="&euro; 0" onkeyup="calcIncl()" autofocus>
+		</label>
+		<label for="perc">%
+			<input type="text" id="perc" value="21" onkeyup="percChange()">
+		</label><label for="btw">
+			VAT
+			<input type="text" id="btw" value="&euro; 0" disabled>
+		</label>
+		<label for="incl">
+			Inclusive
+			<input type="text" id="incl" value="&euro; 0" onkeyup="calcExcl()">
+		</label>
+	</center>
+	<a href="#explanation" id="explanation_link">?</a>
+	<a href="#">
+		<center id="explanation">
+			<p>For my bookings, I didn't want to type the whole calculation over and over again. So I came up with this very easy to use calculator that works in both ways.</p>
+		</center>
+	</a>
+<script type="text/javascript" src="js/calculation.min.js"></script>
+</body>
+</html>
